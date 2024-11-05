@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import Image from "$lib/myComponents/Image.svelte";
     import Post from "$lib/myComponents/Post.svelte";
 
     let posts: {
@@ -9,23 +8,34 @@
         src: string,
         alt: string,
         href: string,
+        width: number,
+        height: number,
     }[] = [];
 
+    export let data;
+
     onMount(async () => {
-        const response = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=20');
-        const data = await response.json();
-        posts = data.map((post: any) => ({
-            likeCount: Math.floor(Math.random() * 100),
-            bookmarkCount: Math.floor(Math.random() * 100),
-            src: post.url,
-            alt: post.title,
-            href: `https://jsonplaceholder.typicode.com/photos/${post.id}`
-        }));
+        const res = await data.response;
+        posts = res.posts.map((post: any) => {
+            const width = post.file.width;
+            const height = post.file.height;
+            return {
+                likeCount: post.score.up,
+                bookmarkCount: post.fav_count,
+                src: post.file.url,
+                alt: post.tags.artist.join(', '),
+                href: `https://e621.net/posts/${post.id}`,
+                width,
+                height,
+            };
+        });
     });
 </script>
 
-<div class="flex flex-wrap gap-2">
+<div class="masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
     {#each posts as post}
-        <Post {...post} />
+        <div class="break-inside mb-3">
+            <Post {...post} />
+        </div>
     {/each}
 </div>

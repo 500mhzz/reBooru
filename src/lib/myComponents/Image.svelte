@@ -29,10 +29,10 @@
 </script>
 
 {#if loading}
-    <Skeleton style="height: {height}; width: {width};" class="rounded-lg bg-white/20" />
+    <Skeleton style="height: 200px; width: full;" class="rounded-lg rounded-b-none bg-white/20" />
 {:else if failed}
-    <div class="h-[{height}] w-[{width}]">
-        <p>Failed to load image</p>
+    <div class="bg-neutral-800" style="height: {height}; width: {width};">
+        <img src="failed-to-load.png" alt="">
     </div>
 {:else if loaded}
     <img
