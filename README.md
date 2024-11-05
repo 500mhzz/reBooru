@@ -10,7 +10,6 @@ ReBooru is a modern, fast, and sleek booru-style image board inspired by platfor
 - **High Performance**: Optimized for speed and efficiency using Vite and SvelteKit.
 - **Responsive Design**: Fully responsive layout that works seamlessly on both desktop and mobile devices.
 - **Advanced Search**: Powerful search capabilities to quickly find the content you're looking for.
-- **User Interactions**: Like, bookmark, and comment on posts.
 - **Lazy Loading**: Efficient image loading to improve performance and user experience.
 
 # ReBooru Development Checklist
@@ -64,22 +63,21 @@ ReBooru is a modern, fast, and sleek booru-style image board inspired by platfor
 
 Make sure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (version 14 or higher)
-- [npm](https://www.npmjs.com/) (version 6 or higher)
+- [bun](https://bun.sh) (version 1 or higher)
 
 ### Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/rebooru.git
+    git clone https://github.com/500mhzz/reBooru.git
     cd rebooru
     ```
 
 2. Install dependencies:
 
     ```bash
-    npm install
+    bun install
     ```
 
 ### Development
@@ -87,10 +85,10 @@ Make sure you have the following installed:
 To start the development server:
 
 ```bash
-npm run dev
+bun run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+bun run dev -- --open
 ```
 
 ### Building
@@ -98,13 +96,13 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```bash
-npm run build
+bun run build
 ```
 
 You can preview the production build with:
 
 ```bash
-npm run preview
+bun run preview
 ```
 
 ### Deployment
@@ -117,8 +115,8 @@ Contributions are welcome! Please open an issue or submit a pull request on GitH
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU GENERAL PUBLIC License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For any inquiries, please contact [your.email@example.com](mailto:your.email@example.com).
+For any inquiries, please contact [its500mhz@proton.me](mailto:its500mhz@proton.me).
