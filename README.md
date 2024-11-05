@@ -1,22 +1,90 @@
-# create-svelte
+# NOTE: REBOORU IS STILL IN ALPHA! SO STUFF MAY **NOT** WORK AS INTENDED OR MAY BE SLOW TO WORK.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+# ReBooru
 
-## Creating a project
+ReBooru is a modern, fast, and sleek booru-style image board inspired by platforms like Rule34, e621, and Danbooru. Unlike these older platforms that rely on outdated technologies like PHP, JQuery, ReBooru uses modern web tech to give you a blazing fast user experience.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Features
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- **Modern UI**: A clean and responsive user interface built with Svelte and Tailwind CSS.
+- **High Performance**: Optimized for speed and efficiency using Vite and SvelteKit.
+- **Responsive Design**: Fully responsive layout that works seamlessly on both desktop and mobile devices.
+- **Advanced Search**: Powerful search capabilities to quickly find the content you're looking for.
+- **User Interactions**: Like, bookmark, and comment on posts.
+- **Lazy Loading**: Efficient image loading to improve performance and user experience.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+# ReBooru Development Checklist
 
-## Developing
+| Task | Status |
+|------|--------|
+| **Features** | |
+| Base colors and components | ⏱️ |
+| Responsive Design for both desktop and mobile devices | ⏱️ |
+| Advanced Search functionality | [ ] |
+| User Interactions (like, bookmark, comment on posts) | [ ] |
+| Lazy Loading for images | ✅ |
+| **Components** | |
+| Header Component | ✅ |
+| Footer Component | [ ] |
+| Post Component   | ✅ |
+| Search Component | [ ] |
+| User Profile Component | [ ] |
+| Comment Section Component | [ ] |
+| **Pages** | |
+| Home Page | ✅ |
+| Search Results Page | [ ] |
+| Post Detail Page | [ ] |
+| User Profile Page | [ ] |
+| Login/Signup Page | [ ] |
+| **Backend** | |
+| API Integration for fetching posts | [ ] |
+| User Authentication | [ ] |
+| Database setup for storing user data and posts | [ ] |
+| Server-side rendering with SvelteKit | [ ] |
+| **Testing** | |
+| Unit Tests for components | [ ] |
+| Integration Tests for API | [ ] |
+| End-to-End Tests for user flows | [ ] |
+| **Documentation** | |
+| Project Setup Guide | [ ] |
+| Contribution Guidelines | [ ] |
+| API Documentation | [ ] |
+| **Deployment** | |
+| Setup CI/CD pipeline | [ ] |
+| Deploy to production environment | [ ] |
+| Monitor performance and errors | [ ] |
+| **Miscellaneous** | |
+| SEO Optimization | [ ] |
+| Accessibility Improvements | [ ] |
+| Performance Tuning | [ ] |
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) (version 6 or higher)
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/yourusername/rebooru.git
+    cd rebooru
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+### Development
+
+To start the development server:
 
 ```bash
 npm run dev
@@ -25,7 +93,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+### Building
 
 To create a production version of your app:
 
@@ -33,6 +101,24 @@ To create a production version of your app:
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with:
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+npm run preview
+```
+
+### Deployment
+
+To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request on GitHub.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries, please contact [your.email@example.com](mailto:your.email@example.com).
